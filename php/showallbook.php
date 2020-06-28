@@ -137,7 +137,7 @@
             <h6>Fatal error!</h6>
             <h6>Please log in</h6>
         <?php }
-        if(!$result or $row == '' ){
+        if(!$result){
             echo "<h6 style='color: black; font-size: 40px'>Нет заявок</h6>";
         } ?>
 </body>
