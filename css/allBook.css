@@ -1,0 +1,222 @@
+body {
+    font-family: "Lato-Black";
+    font-size: 17px;
+    color: #ffff;
+    background: #ffc61a;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 40px;
+}
+#status_send {
+    text-align: center;
+    height: 17px;
+    margin-bottom: 40px;
+}
+#active_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(23,23,23,.98);
+    z-index: 9;
+    width: 100%;
+}
+.modal {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: rgba(23,23,23,.98);
+    /* display: flex; */
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.modal form {
+    background: transparent;
+}
+.modal h6 {
+    color: #ffc61a;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.modal .inputs_book {
+    flex-flow: column;
+    align-items: center;
+}
+.modal_input {
+    background: transparent;
+    border-bottom: .1vh solid gray;
+    text-align: center;
+    font-family: "Lato-Regular";
+    padding: 10px 0;
+    transition: all .6s;
+    margin: 30px 0;
+    width: 100%;
+    color: white;
+}
+.modal_input:focus {
+    border-bottom: .1vh solid #ffc61a;
+}
+.status {
+    border: none;
+    margin: 0 0 30px 0;
+}
+.header_content {
+    max-width: 1420px;
+    padding: 37px 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+#exit_butt {
+    height: 7vh;
+    width: 7vh;
+}
+form {
+    background: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.nav_button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all .5s ease-in-out;
+    border-radius: 5vh;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.nav_button:hover {
+    background: #daa505;
+    color: black;
+}
+input,p {
+    border-bottom: .3vh solid #e4e4e4;
+    outline: none;
+    text-align: center;
+}
+p.book_input {
+    border-bottom: .3vh solid #ffc61a;
+    text-align: left;
+}
+input::placeholder {
+    transition: all .5s;
+}
+input:focus::placeholder {
+    opacity: 0;
+}
+.book_desc {
+    text-align: left;
+    text-transform:uppercase ;
+    max-width: 560px;
+}
+#submitForm input{
+    width: 100%;
+}
+.placeholder_book {
+    font-size: 35px;
+    color: black;
+}
+.introduce_book {
+    font-size: 50px;
+    margin-top: 25px;
+}
+.book_text {
+    font-family: "Lato-Regular";
+    text-transform: none;
+    margin-top: 45px;
+}
+.read_more_book {
+    font-size: 29px;
+    font-family: "Bebas Neue Bold";
+    text-transform:uppercase ;
+    background: black;
+    padding: 10px 35px;
+    color: white;
+    border-radius: .8vh;
+    margin-top: 65px;
+    transition: all .5s;
+    cursor: pointer;
+}
+.book_form {
+    color: white;
+    max-width: 442px;
+    width: 100%;
+    margin: 20px 20px;
+}
+.book_form .read_more_book {
+    width: 100%;
+    margin-top: 45px;
+}
+.placeholder_block_book {
+    background: #171717;
+    padding: 25px 37px;
+    width: 100%;
+}
+.placeholder_block_content {
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.color_book {
+    color: #ffc61a;
+}
+.inputs_book {
+    padding: 50px 20px 10px 20px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+.book_input {
+    width: 172px;
+    margin: 20px 10px;
+    font-family: "Lato-Semibold";
+    padding-bottom: 10px;
+    transition: all .3s ease-in-out;
+    color: black;
+
+}
+p.car_book {
+    width: 100%;
+    text-align: center;
+}
+.book_input:focus {
+    border-bottom: .3vh solid #ffc61a;
+}
+.read_more_book {
+    margin: 0 10px;
+    transition: all .5s;
+}
+#accept_book:hover {
+    background: #ffc61a;
+    color: black;
+}
+#deny_book,.deny_book {
+    background: rgba(120,1,1,.9);
+}
+#deny_book:hover,.deny_book:hover {
+    background: rgba(255,0,0,.9);
+}
+.button_book {
+    display: flex;
+    padding: 0 20px;
+}
+
+@keyframes removeForm {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(4vh);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,113 @@
+@media screen and (max-width: 1160px) {
+    .testimonials_content {
+        justify-content: center;
+    }
+    .tariff_content {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .content_book {
+        flex-flow: column;
+        align-items: center;
+    }
+    .book_form {
+        margin-top: 60px;
+    }
+    .book_desc{
+        text-align: center;
+    }
+    .whatwedo_content {
+        justify-content: center;
+    }
+    .cab_app_content {
+        justify-content: center;
+    }
+    .mob_app_img {
+        margin-left: 0;
+    }
+    .footer_content {
+        flex-flow: column;
+        align-items: center;
+    }
+    .footer_block {
+        margin: 40px 0;
+    }
+}
+@media screen and (max-width: 991px) {
+    .tariff_content {
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    .mob_app_img {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header_content {
+        justify-content: center;
+    }
+    .header_nav {
+        margin-top: 15px;
+    }
+    
+}
+@media screen and (max-width: 572px) {
+    .header_nav {
+        display: none;
+    }
+    .number_text {
+        font-size: 50px;
+    }
+    .desc_text {
+        letter-spacing: 8px;
+    }
+    #openMenu_butt {
+        display: block;
+    }
+}
+@media screen and (max-width: 460px) {
+    .book_input {
+        width: 100%;
+    }
+    .iti {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .number_text {
+        font-size: 40px;
+    }
+    .desc_text {
+        letter-spacing: 2px;
+    }
+    .store_app_button {
+        justify-content: center;
+    }
+    .desc_app {
+        text-align: center;
+    }
+    .contact {
+        font-size: 20px;
+    }
+    .client_photo {
+        margin-bottom: 10px;
+    }
+    .num {
+        font-size: 40px;
+    }
+    .introduce_book {
+        font-size: 35px;
+    }
+    .social_icon {
+        text-align: center;
+    }
+    .download_icon {
+        justify-content: center;
+    }
+    .contact_icon {
+        text-align: center;
+    }
+}

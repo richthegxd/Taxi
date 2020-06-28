@@ -1,0 +1,689 @@
+/* 14-106 -> ОБЩИЕ СТИЛИ
+110-121 -> ПЕРВАЯ СЕКЦИЯ
+195-280 -> СЕКЦИЯ С ОКНОМ БРОНИРОВАНИЯ
+284-382 -> СЕКЦИЯ С ТАРИФАМИ
+386-449 -> ЧЕТВЕРТАЯ СЕКЦИЯ
+453-497 -> СЕКЦИЯ С МОБ. ПРИЛОЖЕНИЕМ
+501-570 -> СЕКЦИЯ С КЛИЕНТАМИ
+574-585 -> СЕКЦИЯ С КОНТАКТАМИ ДЛЯ СВЯЗИ
+589-678 -> ПОДВАЛ
+682-689 -> АНИМАЦИИ */
+
+
+
+/* -------------------ОБЩИЕ СТИЛИ-------------------*/
+body {
+    font-family: "Lato-Black";
+    font-size: 17px;
+    color: #ffff;
+}
+#status_send {
+    text-align: center;
+    height: 17px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+input {
+    border-bottom: .3vh solid #e4e4e4;
+    outline: none;
+}
+input::placeholder {
+    transition: all .5s;
+}
+input:focus::placeholder {
+    opacity: 0;
+}
+select {
+    outline: none;
+    border: transparent;
+    background: transparent;
+    -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   border-bottom: .3vh solid #e4e4e4;
+}
+    /* -------------------МОБИЛЬНОЕ МЕНЮ -------------------*/
+    #mob_menu {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(23,23,23,.98);
+        z-index: 9;
+        transition: all .4s ease-in-out;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    #mob_menu .nav_button {
+        margin: 20px 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        padding: 20px 0;
+        background: #daa505;
+        color: black;
+    }
+    #mob_menu .nav_button:active {
+        background: #101010;
+    }
+    #openMenu_butt {
+        display: none;
+        position: absolute;
+        right: 1vh;
+        width: 34px;
+        height: 34px;
+        z-index: 10;
+    }
+
+#active_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(23,23,23,.98);
+    z-index: 9;
+    animation: activeHeader .8s ease-in-out forwards;
+}
+#active_header .header_content {
+    align-items: center;
+}
+.placeholder_block {
+    text-transform: uppercase;
+    text-align: center;
+}
+.small_placeholder {
+    color: #ffc61a;
+    font-size: 35px;
+}
+.large_placeholder {
+    font-size: 43px;
+    color: black;
+}
+
+
+/* -------------------ПЕРВАЯ СЕКЦИЯ-------------------*/
+.header_section {
+    background: url(../img/bg.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    min-height: 740px;
+}
+.header_content {
+    max-width: 1420px;
+    padding: 37px 0;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+.main_header {
+    width: 100%;
+}
+.logo {
+    padding-left: 20px;
+}
+.logo_name {
+    font-size: 40px;
+}
+.color_logo {
+    color: #daa505;
+}
+.logo_desc {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.header_nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+.nav_button {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all .5s ease-in-out;
+    border-radius: 5vh;
+    margin: 0 2px;
+}
+.nav_button:hover {
+    background: #daa505;
+    color: black;
+}
+.text_content_header {
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.book_cab_text {
+    font-size: 35px;
+    color: #daa505;
+    margin-top: 38px;
+    line-height: 1;
+}
+.number_text {
+    font-size: 72px;   
+}
+.desc_text {
+    font-size: 20px;
+    letter-spacing: 15px;
+}
+.car_header {
+    position: relative;
+    max-width: 820px;
+    width: 82%;
+    margin: 0 auto;
+}
+.car_header_content {
+    position: absolute;
+    transform: translate(0%,50px);
+    width: 100%;
+    height: auto;
+}
+
+
+/* -------------------СЕКЦИЯ С ОКНОМ БРОНИРОВАНИЯ-------------------*/
+.book {
+    background: #ffc61a;
+    padding: 150px 0 135px 0;
+}
+.content_book {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1240px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    color: #101010;
+}
+.book_desc {
+    text-align: left;
+    text-transform:uppercase ;
+    max-width: 560px;
+}
+.placeholder_book {
+    font-size: 35px;
+    color: black;
+}
+.introduce_book {
+    font-size: 50px;
+    margin-top: 25px;
+}
+.book_text {
+    font-family: "Lato-Regular";
+    text-transform: none;
+    margin-top: 45px;
+}
+.read_more_book {
+    font-size: 29px;
+    font-family: "Bebas Neue Bold";
+    text-transform:uppercase ;
+    background: black;
+    padding: 10px 35px;
+    color: white;
+    border-radius: .8vh;
+    margin-top: 65px;
+    transition: all .5s;
+}
+.book_form {
+    color: white;
+    max-width: 442px;
+    width: 100%;
+}
+.book_form .read_more_book {
+    width: 100%;
+    margin-top: 45px;
+}
+.placeholder_block_book {
+    background: #171717;
+    padding: 25px 37px;
+}
+.placeholder_block_content {
+    text-transform: uppercase;
+    font-size: 34px;
+}
+.color_book {
+    color: #ffc61a;
+}
+.inputs_book {
+    background: white;
+    padding: 35px 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.book_input {
+    width: 172px;
+    margin: 20px 10px;
+    font-family: "Lato-Semibold";
+    padding-bottom: 10px;
+    transition: all .3s ease-in-out;
+}
+.book_input:focus {
+    border-bottom: .3vh solid #ffc61a;
+}
+.book_input:nth-child(odd)::placeholder {
+    color: black;
+}
+.select_book {
+    width: 100%;
+}
+
+
+/* -------------------СЕКЦИЯ С ТАРИФАМИ-------------------*/
+.tarrifs {
+    padding: 65px 0 80px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.tariff_content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1233px;
+    width: 100%;
+    margin: 70px auto 0 auto;
+}
+.tariff {
+    background: #f5f4f2;
+    padding: 50px 30px 30px 30px;
+    margin: 60px 20px;
+    transition: all .5s;
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: black;
+    text-align: center;
+    justify-content: flex-end;
+}
+.tariff:hover {
+    background: #ffc61a;
+}
+.tarifcar_block {
+    position: relative;
+    max-width: 310px;
+    width: 100%;
+    margin: 0 auto;
+}
+.tarifcar {
+    position: absolute;
+    transform: translate(-50%,-90%);
+    width: 100%;
+    height: auto;
+}
+.name_tariff {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.desc_tariff {
+    font-family: "Lato-Regular";  
+}
+.cost {
+    margin-top: 40px;
+    color: #ffc61a;
+    font-size: 43px;
+    transition: color .5s;
+}
+.tariff .read_more_book {
+    background: #ffc61a;
+    color: black;
+    transition: all .5s;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.tariff:hover .read_more_book {
+    background: rgba(27, 27, 27,.9);
+    color: white;
+} 
+.tariff .read_more_book:hover {
+    background: rgba(27, 27, 27,1);
+}
+.tariff:hover .cost{
+    color: #1b1b1b;
+}
+.favorite {
+    background: rgba(27, 27, 27,1);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 7px 10px;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: opacity .5s;
+}
+.star {
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: #ffc61a;
+}
+.tariff:hover .favorite{
+    opacity: 1;
+}
+
+
+/* -------------------ЧЕТВЕРТАЯ СЕКЦИЯ-------------------*/
+.whatwedo {
+    padding: 80px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: url(../img/bg2.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.whatwedo .small_placeholder{
+    color: #ffc61a;
+}
+.whatwedo .large_placeholder {
+    color: white;
+}
+.whatwedo_content {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.whatwedo_block {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 40px 0;
+    max-width: 500px;
+}
+.placeholder_img {
+    width: 80px;
+    height: 80px;
+    background: #ffc61a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "FontAwesome";
+    color: black;
+    font-size: 30px;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+.block_placeholder {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #ffc61a;
+}
+.block_text {
+    font-family: "Lato-Regular";
+    color: white;
+    max-width: 370px;
+}
+.f108:before {
+    content: "\f253";
+    font-family: FontAwesome;
+}
+.f10b:before {
+    content: "\f19c";
+    font-family: "FontAwesome";
+}
+
+
+/* -------------------СЕКЦИЯ С МОБ. ПРИЛОЖЕНИЕМ-------------------*/
+.cab_app {
+    padding: 70px 0 0 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #101010;
+}
+.cab_app_content {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1115px;
+    width: 100%;
+    justify-content: flex-end;
+    margin: 40px auto 0 auto;
+    position: relative;
+}
+.desc_app {
+    max-width: 440px;
+    width: 100%;
+    margin-top: 40px;
+}
+.placeholder_app {
+    font-size: 25px;
+    color: black;
+    max-width: 420px;
+}
+.desc_app_text {
+    margin-top: 35px;
+    max-width: 355px;
+}
+.store_app_button {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.app_img {
+    width: 200px;
+    margin: 10px 0;
+}
+.mob_app_img {
+    margin-left: 170px;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+/* -------------------СЕКЦИЯ С КЛИЕНТАМИ-------------------*/
+.testimonials {
+    padding: 110px 0 60px 0;
+    background: url(../img/bg3.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.testimonials .large_placeholder{
+    color: white;
+}
+.testimonials_content {
+    margin-top: 85px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+}
+.client {
+    max-width: 580px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 40px 70px 30px 45px;
+    background: #040707;
+    border-radius: 5vh;
+    position: relative;
+}
+.client_text {
+    max-width: 460px;
+    line-height: 1.3;
+}
+.client_initials {
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.inner_initials {
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.name {
+    color: #ffc61a;
+    font-size: 25px;
+}
+.profession {
+    margin-top: 5px;
+}
+.client_photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+.eclipse {
+    background: #040707;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    bottom: -2.6vh;
+    right: 10.5vh;
+}
+.second_eclipse {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 10.5vh;
+}
+
+
+/* -------------------СЕКЦИЯ С КОНТАКТАМИ ДЛЯ СВЯЗИ-------------------*/
+.contact {
+    padding: 75px 0 95px 0;
+    background: #ffc61a;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.num {
+    font-size: 76px;
+    margin-top: 40px;
+}
+
+
+/* -------------------ПОДВАЛ-------------------*/
+footer {
+    background: url(../img/bg4.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 80px 0;
+}
+.footer_content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer_block {
+    max-width: 340px;
+    width: 100%;
+}
+.footer_placeholder_block {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.fake_footer_border {
+    height: .8vh;
+    width: 100%;
+    background: #ffc61a;
+    margin-top: 35px;
+}
+.footer_text {
+    margin-top: 45px;
+}
+.social_icon {
+    font-family: "FontAwesome";
+    color: #ffc61a;
+    font-size: 20px;
+    margin-top: 45px;
+}
+.social_icon span:first-child {
+    margin: 0 10px 0 0;
+}
+.social_icon span {
+    margin: 0 10px;
+}
+.download_icon {
+    font-size: 20px;
+    color: #ffc61a;
+    font-family: "Lato-Regular";
+    display: flex;
+    flex-flow: row wrap;
+    /* margin-top: 45px; */
+}
+.download_icon_block {
+    display: flex;
+    flex-flow: column;
+}
+.download_icon p {
+    margin-top: 35px;
+}
+.download_icon_content {
+    margin-left: 30px;
+    font-family: "FontAwesome";
+    color: white;
+    text-align: center;
+    margin-top: 28px;
+    font-size: 30px;
+}
+.contact_icon {
+    font-family: "FontAwesome";
+    margin-right: 30px;
+}
+.contact_block p{
+    margin-top: 28px;
+    font-family: "Lato-Regular";
+}
+.contact_icon {
+    display: flex;
+    flex-flow: row wrap;
+}
+.contact_block .contact_icon {
+    flex-flow: row nowrap;
+}
+.contact_block .download_icon_content {
+    font-size: 23px;
+    margin: 28px 30px 0 0;
+}
+
+
+/* -------------------АНИМАЦИИ-------------------*/
+@keyframes activeHeader {
+    from {
+        transform: translateY(-15vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../font/Bebas Neue Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../font/FontAwesome.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../font/Lato-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../font/Lato-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../font/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Semibold";
+  src: url("../font/Lato-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
