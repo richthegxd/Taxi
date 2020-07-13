@@ -124,7 +124,7 @@
             this.timepicker.css({
                 'z-index': this.element.css('z-index') + 1,
                 position: 'absolute',
-                left: timepickerPos.left,
+                left: timepickerPos.left - 50,
                 top: timepickerPos.top + $(element)[0].offsetHeight
             }).show();
             //If there is a show function, then call it with the input calling the timepicker and the
