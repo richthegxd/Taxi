@@ -29,3 +29,13 @@ setTimeout(function(){
     window.scrollTo(0, 0);
 }, 1);
 Revealator.effects_padding = '-150';
+
+setTimeout(function(){
+        const menuButton = document.querySelectorAll("#navButton")
+        let j = 1;
+        for(let i = 0; i < menuButton.length; i++) {
+            j++;
+            menuButton[i].classList.remove("revealator-delay" + j)
+        }
+    },600
+)
